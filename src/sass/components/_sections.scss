@@ -1,0 +1,110 @@
+.section-fullwidth {
+  width: 100%;
+  padding: 2.5em 0;
+
+  .row {
+    flex: 0 0 $max-width;
+    max-width: $max-width;
+  }
+}
+
+.section-welcome {
+  margin-top: 5.25em;
+  padding-top: 10.875em;
+  background-image: url('https://s3-alpha-sig.figma.com/img/3795/0a87/59edf0e20d5a220158df57a29866bea3?Expires=1624233600&Signature=bEf5vq5GvGj19jT-zMGauCudmYxhs5AV01p8~mlDlHLdBcHAJHdKb2UGUK-SJgGYX17tHEb17gB34PIPs0XWxhHhTKiCb1iABKHOtkwkQaiBgPyoxVuQJE1cFElcwsH5VRIM~xwf375HkCuY9eeYFEKBuYZq9u~OI3Sfjl6kY-Aa9UkqvE9IOclO4d7fNRrdY5TTqmd2ymkE56uB4KXw8GlnKVaAk~VMMeVog0JLvAO24eSAQiDPwkM2vntnfiqiQHlT-yIopwTtOODQgR-CS5ZVhZR430jjmK44BVsMtqTffup~MAAQ6LtVxZkdlGm6MGRPvoFXJK2GYoOjpwe57g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+  background-position: center;
+  background-size: cover;
+  height: 56em;
+
+  .entry-featured {
+    .entry-title {
+      margin: 0 0 0.5em;
+    }
+  }
+
+  .entry-featured-footer{
+    margin-top: 2.5em;
+  }
+}
+
+.section-information {
+  padding: 10.5em 0 3.125em 0;
+
+  .cards-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+  }
+}
+
+.section-background-primary {
+  background-color: var(--color-primary-dark);
+}
+
+.section-story-info {
+  padding: 14.25em 0 11em 0;
+
+  .entry-featured {
+    .entry-title, .entry-excerpt {
+      color: var(--color-white);
+    }
+
+    .entry-title {
+      margin-top: 0;
+      margin-bottom: 0.75em;
+    }
+
+    .entry-excerpt {
+      font-weight: 600;
+    }
+
+    &-footer {
+      margin-top: 3.5em;
+    }
+  }
+
+  .story-description-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.section-product-information{
+  padding: 7.5em 0 10.5em;
+
+  .entry-simple {
+    display: flex;
+    padding-left: 3.75em;
+
+    .entry-thumbnail-background, .entry-content {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .entry-thumbnail-background {
+      height: 35.75em;
+    }
+
+    .entry-content {
+      padding-left: 5.375em;
+    }
+
+    .entry-body {
+      .entry-title {
+        margin: 0.5em 0;
+        line-height: 1.4;
+      }
+    }
+
+    .entry-thumbnail-wrapper {
+      padding-bottom: 35.75em;
+      max-width: 22em;
+      margin: 0 auto;
+    }
+
+    &-footer {
+      margin-top: 2.5em;
+    }
+  }
+}

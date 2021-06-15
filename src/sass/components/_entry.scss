@@ -1,0 +1,133 @@
+.entry {
+  &-title {
+    color: var(--color-primary);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &-excerpt {
+    color: var(--color-muted);
+
+    p {
+      line-height: 1.4;
+      font-size: 1.25em;
+    }
+  }
+
+  &-meta {
+    p {
+      color: var(--color-muted);
+      font-weight: 600;
+      font-size: 1.5em;
+      margin: 0;
+    }
+  }
+
+  &-thumbnail-background {
+    background-color: var(--color-primary-light);
+    border-radius: $radius-medium;
+    position: relative;
+  }
+
+  &-thumbnail-wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: calc(100% * 2 / 3);
+  }
+
+  &-thumbnail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &-video {
+    .entry-thumbnail-wrapper {
+      .entry-thumbnail {
+        width: 100%;
+        height: 32.25em;
+        border-radius: $radius-medium;
+        box-shadow: $shadow-primary;
+      }
+    }
+  }
+}
+
+.entry-horizontal {
+  .entry-meta {
+    p {
+      font-size: 1.5em;
+      margin: 0;
+    }
+  }
+
+  .entry-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .entry-title {
+      margin: 0;
+    }
+  }
+
+  .entry-excerpt {
+    margin-left: 8.5em;
+    max-width: 42em;
+    flex: 0 0 42em;
+  }
+}
+
+.entry-simple {
+  .thumbnail-info-wrapper {
+    position: absolute;
+    left: -3.75em;
+    bottom: -4.625em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18.625em;
+    height: 18.375em;
+    background: var(--color-white);
+    border-radius: $radius-small;
+    padding: 1.5em 3.625em;
+
+    .thumbnail-info {
+      width: 3.625em;
+      height: 3.625em;
+      object-fit: cover;
+      background-color: var(--color-primary-light);
+      border-radius: 50%;
+    }
+
+    .info-title {
+      margin: 0 0 0.875em;
+      padding:0 0.125em 0.625em;
+      font-size: 1.125em;
+      border-bottom: 1px solid var(--color-dark);
+    }
+
+    .info-name {
+      margin-top: 1em;
+    }
+
+    .info-heading {
+      font-size: 1.125em;
+      font-weight: 700;
+      font-family: $font-primary;
+    }
+
+    .info-list {
+      padding-left: 1.125em;
+
+      .list-item:not(:last-child) {
+        margin-bottom: 1em;
+      }
+
+      .list-item {
+        font-size: 0.875em;
+      }
+    }
+  }
+}

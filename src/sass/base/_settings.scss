@@ -1,0 +1,28 @@
+// fonts
+$font-primary: "PT Serif", serif;
+$font-secondary: 'Lato', sans-serif;
+
+// breakpoints
+$breakpoint-normal: 48em;
+
+// colors
+:root {
+  --color-primary: #01996D;
+  --color-primary-dark: #245852;
+  --color-primary-light: rgba(1,153, 109, 0.2);
+  --color-white: #ffffff;
+  --color-dark: #292929;
+  --color-muted: #424242;
+  --color-light: #D6D6D6;
+}
+
+// border-radius
+$radius-big: 1.125em;
+$radius-medium: 0.75em;
+$radius-small: 0.25em;
+
+//shadows  
+$shadow-primary: 0 0.25em 0.25em rgba(0, 0, 0, 0.5);
+
+//width
+$max-width:83.875em;

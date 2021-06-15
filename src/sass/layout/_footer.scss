@@ -1,0 +1,31 @@
+.site-footer {
+  padding: 6em 0 7.125em;
+  background-color: var(--color-primary-dark);
+
+  &-inner {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  .site-branding {
+    font-weight: 900;
+    font-size: 2.5em;
+    padding: 0 0 0.75em 0;
+  }
+
+  .menu {
+    padding-left: 0;
+    margin: 0;
+  }
+  .menu-item {
+    list-style: none;
+  }
+
+  a {
+    display: block;
+    padding: 1.25em 0;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--color-white);
+  }
+}

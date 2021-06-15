@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+// 3. Base
+@import "base/settings";
+@import "base/typography";
+@import "base/normalize";
+@import "base/fonts";
+
+// 4. Layout
+@import "layout/header";
+@import "layout/footer";
+
+// 5. Components
+@import "components/buttons";
+@import "components/sections";
+@import "components/entry";
+@import "components/card";
+
+// 6. Vendors
+// sass-lint:disable
+@import "../../node_modules/foundation-sites/scss/foundation.scss";
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+// sass-lint:enable

@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  width: max-content;
+  font-size: 1.25em;
+  padding: 1.25rem 2.125em;
+  font-weight: 400;
+  border-radius: $radius-small;
+  text-decoration: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-primary {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+}
