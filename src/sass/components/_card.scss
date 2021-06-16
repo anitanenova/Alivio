@@ -60,4 +60,13 @@
       bottom: 1.5em;
     }
   }
+
+  @media screen and (max-width: $breakpoint-normal) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  &-middle {
+    margin-top: 3em;
+  }
 }

@@ -3,7 +3,10 @@ $font-primary: "PT Serif", serif;
 $font-secondary: 'Lato', sans-serif;
 
 // breakpoints
+$breakpoint-large: 75em;
+$breakpoint-medium: 64em;
 $breakpoint-normal: 48em;
+$breakpoint-small: 40em;
 
 // colors
 :root {
