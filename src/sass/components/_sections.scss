@@ -11,7 +11,7 @@
 .section-welcome {
   margin-top: 5.25em;
   padding-top: 10.875em;
-  background-image: url('https://s3-alpha-sig.figma.com/img/3795/0a87/59edf0e20d5a220158df57a29866bea3?Expires=1624233600&Signature=bEf5vq5GvGj19jT-zMGauCudmYxhs5AV01p8~mlDlHLdBcHAJHdKb2UGUK-SJgGYX17tHEb17gB34PIPs0XWxhHhTKiCb1iABKHOtkwkQaiBgPyoxVuQJE1cFElcwsH5VRIM~xwf375HkCuY9eeYFEKBuYZq9u~OI3Sfjl6kY-Aa9UkqvE9IOclO4d7fNRrdY5TTqmd2ymkE56uB4KXw8GlnKVaAk~VMMeVog0JLvAO24eSAQiDPwkM2vntnfiqiQHlT-yIopwTtOODQgR-CS5ZVhZR430jjmK44BVsMtqTffup~MAAQ6LtVxZkdlGm6MGRPvoFXJK2GYoOjpwe57g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+  background-image: url('../../dist/images/welcome-image.svg');
   background-position: center;
   background-size: cover;
   height: 56em;
@@ -161,7 +161,7 @@
         padding-left: 3em;
       }
       .entry-thumbnail-wrapper {
-        padding-bottom: 18em;
+        padding-bottom: 22em;
         max-width: 14em;
       }
     }

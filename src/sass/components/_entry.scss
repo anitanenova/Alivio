@@ -119,6 +119,7 @@
     background: var(--color-white);
     border-radius: $radius-small;
     padding: 1.5em 3.625em;
+    box-shadow: $shadow-secondary;
 
     .thumbnail-info {
       width: 3.625em;
