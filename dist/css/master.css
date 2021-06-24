@@ -431,7 +431,8 @@ summary {
   border-bottom: 1px solid var(--color-separator); }
 
 .site-header-inner {
-  display: flex; }
+  display: flex;
+  background-color: var(--color-base); }
 
 .site-header .site-branding {
   display: block;
@@ -507,7 +508,11 @@ summary {
 
 @media screen and (max-width: 48em) {
   .site-header-inner {
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: calc(100% + 2em);
+    left: -1em;
+    position: relative;
+    padding: 0 1em; }
   .site-header .site-branding {
     padding: 0.75em 2em 0.75em 0; }
   .site-header .menu-toggle {
@@ -518,11 +523,11 @@ summary {
   .site-header .site-navigation {
     position: absolute;
     left: -1em;
-    top: 0;
+    top: 100%;
+    z-index: -1;
     background-color: var(--color-base);
     border-top: 1px solid var(--color-separator);
     width: 100%;
-    z-index: 100;
     transition: 0.5s;
     transform: translateY(-100%);
     padding-bottom: 1.25em;
@@ -703,7 +708,7 @@ summary {
   line-height: 1.4; }
 
 .section-product-information .entry-simple .entry-thumbnail-wrapper {
-  padding-bottom: 87%;
+  height: 100%;
   max-width: 22em;
   margin: 0 auto; }
 
@@ -724,6 +729,8 @@ summary {
   .section-product-information .entry-simple {
     flex-direction: column;
     padding-left: 0; }
+  .section-product-information .entry-simple .entry-thumbnail-wrapper {
+    height: 0; }
   .section-product-information .entry-simple .entry-thumbnail-background, .section-product-information .entry-simple .entry-content {
     flex: 0 0 100%;
     max-width: 100%; }
@@ -927,6 +934,8 @@ summary {
   .card {
     flex: 0 0 100%;
     max-width: 100%; }
+  .card-thumbnail-wrapper {
+    padding-bottom: 60%; }
   .card-middle {
     margin-top: 3em; } }
 

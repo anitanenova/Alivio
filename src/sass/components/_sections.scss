@@ -136,7 +136,7 @@
     }
 
     .entry-thumbnail-wrapper {
-      padding-bottom: 87%;
+      height: 100%;
       max-width: 22em;
       margin: 0 auto;
     }
@@ -167,6 +167,10 @@
     .entry-simple {
       flex-direction: column;
       padding-left: 0;
+
+      .entry-thumbnail-wrapper {
+        height: 0;
+      }
 
       .entry-thumbnail-background,  .entry-content {
         flex: 0 0 100%;

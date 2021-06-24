@@ -9,6 +9,7 @@
 
   &-inner {  
     display: flex;
+    background-color: var(--color-base);
   }
 
   .site-branding {
@@ -114,6 +115,10 @@
 
     &-inner {  
       justify-content: space-between;
+      width: calc(100% + 2em);
+      left: -1em;
+      position: relative;
+      padding: 0 1em;
     }
 
     .site-branding {
@@ -130,12 +135,12 @@
     .site-navigation {
       position: absolute;
       left: -1em;
-      top: 0;
+      top: 100%;
+      z-index: -1;
       background-color: var(--color-base);
       border-top: 1px solid var(--color-separator);
 
       width: 100%;
-      z-index: 100;
       transition: 0.5s;
       transform: translateY(-100%);
 
