@@ -1,6 +1,5 @@
-// fonts
-$font-primary: "PT Serif", serif;
-$font-secondary: 'Lato', sans-serif;
+// change foundation max-width
+$global-width: 87.5em;
 
 // breakpoints
 $breakpoint-large: 75em;
@@ -8,25 +7,25 @@ $breakpoint-medium: 64em;
 $breakpoint-normal: 48em;
 $breakpoint-small: 40em;
 
-// colors
 :root {
-  --color-primary: #01996D;
+  // fonts
+  --font-primary: "PT Serif", serif;
+  --font-secondary: "Lato", sans-serif;
+
+  // colors
+  --color-primary: #01996d;
   --color-primary-dark: #245852;
-  --color-primary-light: rgba(1,153, 109, 0.2);
-  --color-white: #ffffff;
-  --color-dark: #292929;
-  --color-muted: #424242;
-  --color-light: #D6D6D6;
+  --color-primary-light: rgba(1, 153, 109, 0.2);
+  --color-base: #ffffff;
+  --color-base-invert: #292929;
+  --color-text: #424242;
+  --color-separator: #d6d6d6;
+
+  // border-radius
+  --radius-medium: 0.75em;
+  --radius-small: 0.25em;
+
+  //shadows
+  --shadow-primary: 0 0.25em 0.25em rgba(0, 0, 0, 0.5);
+  --shadow-secondary: 0 0.25em 1.125em rgba(0, 0, 0, 0.2);
 }
-
-// border-radius
-$radius-big: 1.125em;
-$radius-medium: 0.75em;
-$radius-small: 0.25em;
-
-//shadows  
-$shadow-primary: 0 0.25em 0.25em rgba(0, 0, 0, 0.5);
-$shadow-secondary: 0 0.25em 1.125em rgba(0, 0, 0, 0.25);
-
-//width
-$max-width:83.875em;

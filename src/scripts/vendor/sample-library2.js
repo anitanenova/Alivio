@@ -6,9 +6,9 @@ mobileMenu.addEventListener("click", function (e) {
 
   if (current.contains("menu-open")) {
     current.remove("menu-open");
-    nav.style.transform = "translateX(-100%)";
+    nav.style.transform = "translateY(0)";
   } else {
     current.add("menu-open");
-    nav.style.transform = "translateX(0)";
+    nav.style.transform = "translateY(-100%)";
   }
 });

@@ -1,7 +1,7 @@
 // Basic typography style
 
 html {
-  font-family: $font-primary;
+  font-family: --font-primary;
 }
 
 h1,
@@ -16,12 +16,12 @@ h6,
 .h4-like,
 .h5-like,
 .h6-like {
-  font-family: $font-primary;
+  font-family: var(--font-primary);
 }
 
 p,
 a {
-  font-family: $font-secondary;
+  font-family: var(--font-secondary);
 }
 
 @each $header,

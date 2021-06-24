@@ -2,9 +2,8 @@
   width: 100%;
   padding: 2.5em 0;
 
-  .row {
-    flex: 0 0 $max-width;
-    max-width: $max-width;
+  .row-big {
+    max-width: 96em;
   }
 }
 
@@ -29,12 +28,6 @@
 
   .entry-featured-footer{
     margin-top: 2.5em;
-  }
-
-  .welcome-inner{
-    margin: 0 auto;
-    max-width: $max-width;
-    padding: 0 1em;
   }
 
 
@@ -83,7 +76,7 @@
 
   .entry-featured {
     .entry-title, .entry-excerpt {
-      color: var(--color-white);
+      color: var(--color-base);
     }
 
     .entry-title {
@@ -143,7 +136,7 @@
     }
 
     .entry-thumbnail-wrapper {
-      padding-bottom: 35.75em;
+      padding-bottom: 87%;
       max-width: 22em;
       margin: 0 auto;
     }
@@ -161,7 +154,6 @@
         padding-left: 3em;
       }
       .entry-thumbnail-wrapper {
-        padding-bottom: 22em;
         max-width: 14em;
       }
     }

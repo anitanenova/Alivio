@@ -6,7 +6,7 @@
   }
 
   &-excerpt {
-    color: var(--color-muted);
+    color: var(--color-text);
 
     p {
       line-height: 1.5;
@@ -16,7 +16,7 @@
 
   &-meta {
     p {
-      color: var(--color-muted);
+      color: var(--color-text);
       font-size: 1.5em;
       margin: 0;
     }
@@ -24,7 +24,7 @@
 
   &-thumbnail-background {
     background-color: var(--color-primary-light);
-    border-radius: $radius-medium;
+    border-radius: var(--radius-medium);
     position: relative;
   }
 
@@ -43,13 +43,9 @@
 
   &-video {
     .entry-thumbnail-wrapper {
-      padding-bottom: 32.25em;
-
       .entry-thumbnail {
-        width: 100%;
-        height: 32.25em;
-        border-radius: $radius-medium;
-        box-shadow: $shadow-primary;
+        border-radius: var(--radius-medium);
+        box-shadow: var(--shadow-primary);
       }
     }
   }
@@ -62,6 +58,9 @@
 }
 
 .entry-horizontal {
+  display: flex;
+  flex-direction: column;
+
   .entry-meta {
     p {
       font-size: 1.5em;
@@ -77,31 +76,30 @@
 
     .entry-title {
       margin: 0;
-      max-width: 10em;
-      flex: 0 0 10em;
+      flex: 2;
     }
   }
 
   .entry-excerpt {
-    max-width: 42em;
-    flex: 0 0 42em;
+    flex: 3;
+    margin-left: 8.5em;
   }
 
   @media screen and (max-width: 76em) {
     text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
 
     .entry-body {
       justify-content: center;
-
-      .entry-title {
-        flex: 0 0 60%;
-        max-width: 60%;
-      }
     }
 
     .entry-excerpt {
-      flex: 0 0 80%;
-      max-width: 80%;
+      margin-left: 0;
+    }
+
+    .entry-excerpt, .entry-title {
+      flex: 100%;
     }
   }
 }
@@ -116,10 +114,10 @@
     align-items: center;
     width: 18.625em;
     height: 18.375em;
-    background: var(--color-white);
-    border-radius: $radius-small;
+    background: var(--color-base);
+    border-radius: var(--radius-small);
     padding: 1.5em 3.625em;
-    box-shadow: $shadow-secondary;
+    box-shadow: var(--shadow-secondary);
 
     .thumbnail-info {
       width: 3.625em;
@@ -134,7 +132,7 @@
       padding: 0 0.125em 0.625em;
       font-size: 0.875em;
       font-weight: 600;
-      border-bottom: 1px solid var(--color-dark);
+      border-bottom: 1px solid var(--color-base-invert);
     }
 
     .info-name {
@@ -145,7 +143,7 @@
     .info-heading {
       font-size: 1em;
       font-weight: 700;
-      font-family: $font-primary;
+      font-family: var(--font-primary);
     }
 
     .info-list {

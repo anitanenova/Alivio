@@ -4,7 +4,7 @@
   font-size: 1.25em;
   padding: 1.25rem 2.125em;
   font-weight: 400;
-  border-radius: $radius-small;
+  border-radius: var(--radius-small);
   text-decoration: none;
   outline: none;
 
@@ -13,7 +13,7 @@
   }
 
   &-primary {
-    color: var(--color-white);
+    color: var(--color-base);
     background-color: var(--color-primary);
   }
 }
